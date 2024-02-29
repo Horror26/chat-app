@@ -5,6 +5,7 @@ import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -64,6 +65,11 @@ const Register = () => {
 
   return (
     <div className="formContainer">
+    <Helmet>
+      <title>Register</title>
+      <meta name="description" content="Register here to create an account and start chat" />
+    </Helmet>
+
       <div className="formWrapper">
         <span className="logo">Mindful Chat</span>
         <span className="title">Register</span>

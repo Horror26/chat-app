@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
   const [err, setErr] = useState(false);
@@ -20,6 +21,12 @@ const Login = () => {
     }
   };
   return (
+    <div>
+    <Helmet>
+      <title>Login Page</title>
+      <meta name="description" content="Login to start chat with someone" />
+    </Helmet>
+
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">Mindful Chat</span>
@@ -32,6 +39,7 @@ const Login = () => {
         </form>
         <p>You don't have an account? <Link to="/register">Register</Link></p>
       </div>
+    </div>
     </div>
   );
 };

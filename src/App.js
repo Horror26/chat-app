@@ -14,27 +14,27 @@ function App() {
       return <Navigate to="/login" />;
     }
 
-    return children
+    return children;
   };
 
   return (
     <div className="bg">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/">
-          <Route
-            index
-            element={
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
-            }
-          />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route
+              index
+              element={
+                <ProtectedRoute>
+                  <Home />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
