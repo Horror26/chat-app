@@ -29,7 +29,7 @@ const Login = () => {
 
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Mindful Chat</span>
+      <h1 className="logo" >Mindful Chat</h1>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
