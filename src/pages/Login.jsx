@@ -25,6 +25,7 @@ const Login = () => {
     <Helmet>
       <title>Login Page</title>
       <meta name="description" content="Login to start chat with someone" />
+      <meta name="keywords" content="account,chat,user,login,mindful,register,sign"></meta>
     </Helmet>
 
     <div className="formContainer">

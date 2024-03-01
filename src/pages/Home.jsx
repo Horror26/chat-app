@@ -8,7 +8,8 @@ const Home = () => {
     <div>
     <Helmet>
       <title>Home</title>
-      <meta name="description" content="Flee free to chat with anyone" />
+      <meta name="description" content="Feel free to chat with anyone" />
+      <meta name="keywords" content="account,chat,have,login,mindful,register,sign"></meta>
     </Helmet>
     <div className='home'>
     <div className="container">

@@ -68,6 +68,7 @@ const Register = () => {
     <Helmet>
       <title>Register</title>
       <meta name="description" content="Register here to create an account and start chat" />
+      <meta name="keywords" content="account,chat,new user,mindful,register,sign"></meta>
     </Helmet>
 
       <div className="formWrapper">
